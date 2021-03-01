@@ -1,0 +1,189 @@
+*. ::after,
+::before {
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.block {
+    background-color: #0c0c0c;
+    font-size: 15px;
+    width: 80%;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 18px 30px 3px rgba(0, 0, 0, .75);
+}
+
+.block .left {
+    position: relative;
+    background-color: #212121;
+    color: #969696;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+
+}
+
+
+
+.links ul {
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+
+.block .right {
+    cursor: text;
+    border-radius: 0 10px 10px 0;
+}
+
+.mini-info h4,
+p {
+    text-align: center;
+    margin: 0;
+}
+
+.mini-info {
+    width: 100%;
+}
+
+.mini-info img {
+    width: 50%;
+    border-radius: 10px 0 10px 0;
+}
+
+.mini-info div {
+    font-size: 18px;
+    width: 25%;
+}
+
+#term {
+    color: teal;
+}
+
+#term-text {
+    color: white;
+}
+
+/*анимация*/
+#blink {
+    -webkit-animation: blink2 1s linear infinite;
+    animation: blink2 1s linear infinite;
+}
+
+@-webkit-keyframes blink2 {
+    100% {
+        color: rgba(34, 34, 34, 0);
+    }
+}
+
+@keyframes blink2 {
+    100% {
+        color: rgba(34, 34, 34, 0);
+    }
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    text-align: left;
+}
+
+.links a{
+    color: white;
+}
+
+.links li:hover{
+    background: #0c0c0c;
+}
+
+#about {
+    display: none;
+}
+
+#devtools{
+    display: none;
+}
+
+#about:target{
+    display: block;
+}
+
+#devtools:target {
+    display: block;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
+}
+
+pre {
+    color: white;
+}
+
+
+
+
+.right {
+    cursor: text;
+}
+
+
+/*colors*/
+
+.blue{
+    color: green;
+}
+
+.viol{
+    color: #C792EA;
+}
+
+a #devtools{
+    cursor: text;
+}
+
+a #about{
+    cursor: text;
+}
+
+.bottom-button{
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    height: 40px;
+}
+
+.bottom-button:hover{
+    background: #0c0c0c;
+    transition: 0.2s;
+    
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
